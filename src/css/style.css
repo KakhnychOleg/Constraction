@@ -1,14 +1,11 @@
 /* Default */
 @import "reset.css";
 
-/* Fonts */
-@import "fonts.css";
-
 /* Block */
 @import "header.css";
-@import "second.css";
-@import "benefits.css";
-@import "reviews.css";
+@import "contact.css";
+@import "accord.css";
+@import "slider.css";
 @import "humb-menu.css";
 
 @import "footer.css";
@@ -29,23 +26,36 @@ body {
 
 /* Title */
 .title {
-   margin-bottom: 55px;
-}
-.title__sub {   
-   letter-spacing: 2px;
-   text-transform: uppercase;
-   color: #A8A8A8;
+   font-weight: 600;
+   font-size: 2rem;
+   line-height: 2.625rem;
+   
+   color: #000;
 
+   margin-bottom: 6px;
+}
+.subtitle {   
+   font-weight: 400;
+   font-size: .875rem;
+   line-height: 1.5rem;
+
+   color: #999;
+}
+
+._text-center {
+   text-align: center;
+}
+._mb-30 {
    margin-bottom: 30px;
 }
-.title__main {
-   font-size: 38px;
-   line-height: 48px;
+._mb-20 {
+   margin-bottom: 20px;
 }
-.title__sup {
-   font-size: 16px;
-   line-height: 30px;
-   color: #6B6B6B;
+._mt-60 {
+   margin-top: 60px;
+}
+._mt-80 {
+   margin-top: 80px;
 }
 
 /* Animation text */
@@ -58,13 +68,6 @@ body {
    opacity: 1;
    transition: all 1s;
    transform: translateY(0%);
-}
-
-@media screen and (max-width: 390px){   
-   .title__main {
-      font-size: 28px;
-      line-height: 38px;
-   }
 }
 
 @media screen and (max-width: 1024px){   
