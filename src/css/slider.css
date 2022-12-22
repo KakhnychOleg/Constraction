@@ -1,3 +1,24 @@
 .slider {
-   
+   padding: 134px 0 275px 0;
+}
+
+.slider__title {
+   font-weight: 700;
+   font-size: 3.625rem;
+   line-height: 71px;
+   text-transform: uppercase;
+
+   color: #FFFFFF;
+
+   margin-bottom: 34px;
+}
+
+.slider__text {
+   max-width: 577px;
+
+   font-weight: 400;
+   font-size: 1.25rem;
+   line-height: 34px;
+
+   color: #FFFFFF;
 }

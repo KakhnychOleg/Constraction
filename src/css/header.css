@@ -1,7 +1,19 @@
 .head {
    position: relative;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.361);
    background: transparent;
+   background: url(../img/slide1.png);
+   background-position: center;
+   background-size: cover;
+}
+
+.head::before {
+   content: '';
+   position: absolute;
+   top: 126px;
+   left: 0;
+   width: 100%;
+   height: 1px;
+   background: rgba(255, 255, 255, 0.361);
 }
 
 .header {
@@ -73,6 +85,10 @@
       justify-content: space-between;
       height: 60px;
    }
+   .head::before {
+      top: 60px;
+   }
+   
    .header__logo {
       height: auto;
       margin-left: 15px;
