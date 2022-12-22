@@ -22,3 +22,42 @@
 
    color: #FFFFFF;
 }
+
+
+/* callback */
+.callback {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: #fff;
+   padding: 28px 44px;
+}
+
+.callback__link {
+   display: flex;
+   align-items: center;
+   flex-wrap: nowrap;
+}
+.callback__link:hover .callback__text  {
+   color: #B09355;
+}
+.callback__link:hover .callback__img  {
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.callback__img {
+   background: #B09355;
+   border-radius: 100%;
+   padding: 21px;
+}
+
+.callback__text {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.5rem;
+   text-transform: uppercase;
+
+   color: #333333;
+
+   margin-left: 24px;
+}
