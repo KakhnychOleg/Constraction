@@ -17,7 +17,7 @@
    width: 30px;
    height: 2px;
    z-index: 99999;
-   background-color: #E75624;
+   background-color: #E4C686;
    border-radius: 13px;
    transition-duration: .4s;
 }
@@ -56,11 +56,11 @@
    overflow: hidden;
 }
 .mobile__nav.open {
-   background: #FEE8CE;
+   background: #333;
    width: 80%;
    height: 100vh;
    left: 0px;
-   top: 52px;
+   top: 54px;
    border-radius: 0;
 }
 .mobile__list {
@@ -71,7 +71,8 @@
    flex-direction: column;
    width: 227px;
 }
-.mobile__item {
+.mobile__item,
+.mobile-tel__list {
    background-color: transparent;
    width: 100%;
    opacity: 0;
@@ -82,12 +83,23 @@
 .mobile__item:not(:last-child) {
    margin-bottom: 40px;
 }
+
+.mobile-tel__list {
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 1.5625rem;
+   color: #E4C686;
+}
+.mobile-tel__list:hover {
+   color: #fff;
+}
 .mobile__item a {
    font-size: 1.25rem;
    font-style: normal;
    font-weight: 600;
    line-height: 1.5625rem;
-   color: #E75624;
+   color: #fff;
 }
 .mobile__item a:hover {
    color: #000;
