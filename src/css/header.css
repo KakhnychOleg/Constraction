@@ -72,11 +72,12 @@
 @media screen and (max-width:1024px){
    .header {
       justify-content: space-between;
-      height: 52px;
+      height: 60px;
    }
    .header__logo {
       height: auto;
       margin-left: 15px;
+      margin-top: 8px;
    }
 
 }
