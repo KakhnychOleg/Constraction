@@ -1,0 +1,22 @@
+.footer {   
+   padding: 20px 0 70px 0;
+   background: #1B1B1B;
+   text-align: center;
+   
+   color: #6B6B6B;
+}
+
+.footer__logo {
+   width: 136px;
+   margin: 0 auto;
+   margin-bottom: 30px;
+}
+
+.footer__link {
+   margin: 0 15px;
+   transition: all .3s;
+}
+
+.footer__link:hover {
+   color: #fff;
+}

@@ -1,0 +1,168 @@
+.head {
+   position: relative;
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__menu {
+   display: flex;
+   align-items: center;
+   gap: 2.5rem;
+}
+
+.header__logo {
+   width: 70px;
+   height: 92px;
+   margin-left: -5px;
+}
+
+.menu {
+   line-height: 1.25rem;
+   display: flex;
+   align-items: center;
+   gap: 2.3rem;
+   font-size: 1rem;
+}
+
+.menu__item {
+   display: flex;
+   align-items: center;
+   height: 100px;
+   color: #E75624;
+   font-weight: 600;
+   transition: all .3s;
+   cursor: pointer;
+}
+.menu__item:hover {
+   color: #000;
+}
+
+.mobile-tel,
+.mobile-tel__list {
+   background: #E75624;
+   border: 1px solid #E75624;
+   border-radius: 100px;
+   transition: all .3s ease-in;
+   padding: 13px 20px 7px 20px;
+}
+.mobile-tel__list:hover,
+.mobile-tel:hover {
+   background: #913617;
+   border: 1px solid #913617;
+}
+
+.mobile-tel__list {
+   text-align: center;
+   color: #fff;
+   font-weight: 700;
+}
+
+.mobile-tel > .menu__link{
+   color: #fff;
+}
+
+
+
+.menu__link svg{
+   fill: #fff;
+}
+
+/* Drop */
+.drop:hover .drop__list{
+   display: block;
+}
+
+.drop {
+   position: relative;
+}
+
+.drop__list {
+   position: absolute;
+   top: 100px;
+   left: -54%;
+   width: 220px;
+   z-index: 99;
+   padding: 27px 38px 55px 38px!important;
+   
+   background: #FFFFFF;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   display: none;
+   transition: all .6s ease-in-out;
+}
+
+.drop__item:not(:last-child) {
+   padding: 16px 0 ;
+   text-align: center;
+   border-bottom: 1px solid #E75624;
+   transition: all .3s ease;
+
+   color: #E75624;
+}
+.drop__item:first-child {
+   padding-top: 0;
+}
+
+.drop__item:hover {
+   color: #000;
+}
+
+.drop__link {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+}
+/* ---------------------------- */
+
+.last-link {
+   position: absolute;
+   bottom: 0px;
+   left: 0;
+   width: 100%;
+   font-weight: 600;
+   text-align: center;
+   padding: 18px;
+   background: #F7CF0D;
+   color: #E75624;
+   border-radius: 0px 0px 10px 10px;
+   transition: all .3s ease;
+}
+.last-link:hover {
+   color: #000;
+}
+
+/* REsponsive */
+@media screen and (max-width:1024px){
+   .header {
+      justify-content: start;
+      height: 52px;
+   }
+   .header__logo {
+      width: 40px;
+      margin-left: 15px;
+   }
+   
+   .mobile-tel {
+      position: absolute;
+      right: -16px;
+      width: 185px;
+
+      background: #E75624;
+      border: 1px solid #E75624;
+      border-radius: 100px 0 0 100px;
+      transition: all .3s ease-in;
+      padding: 10px 20px 10px 20px;
+   }
+}
+
+@media screen and (max-width:1024px){
+   .menu {
+       display: none;
+   }
+}
