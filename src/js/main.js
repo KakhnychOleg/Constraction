@@ -28,32 +28,14 @@ $(document).ready(function () {
   };
 
   // Slider testimonials
-  $('.reviews-slider').slick({
+  $('.slider__list').slick({
     dots: true,
     infinite: true,
     autoplay: true,
     speed: 500,
     pauseOnHover: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
   });
 
   // Accordion
