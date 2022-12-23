@@ -23,6 +23,10 @@
    color: #FFFFFF;
 }
 
+.slider__list {
+   position: relative;
+}
+
 /* Navigation */
 
 
