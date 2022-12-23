@@ -1,11 +1,6 @@
-.mb-70 {
-   margin-bottom: 70px;
+.services__block {
+   width: 100%;
 }
-
-.accord {
-   margin-top: 267px;
-}
-
 .accord__item {
    display: flex;
    align-items: flex-start;
@@ -13,44 +8,46 @@
    margin: 80px 0;
 }
 
-.accord__img {
-   max-width: 608px;
-   margin: 0;
-}
-
 .accordion {
-   max-width: 488px;
    width: 100%;
 }
 .accordion__item {
    margin-bottom: 12px;
-
-   background: linear-gradient(90deg, #FF6800 0%, #FF1F00 100%);
-   border-radius: 15px;
+   border-top: 1px solid #606060;
+   
    transition: all .3s ease-in;
 }
+.accordion__item:last-child {
+   border-bottom: 1px solid #606060;
+}
+.accordion__num {
+   font-weight: 600;
+   font-size: 1.5rem;
+   line-height: 34px;
+
+   color: #FFFFFF;
+   margin-right: 72px;
+}
+
 .accordion__title {
-   color: #fff;
-   font-weight: 500;
-   font-size: .875rem;
-   line-height: 1.5rem;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 34px;
+   
+   color: #B09355;
+   padding: 50px 0;
 
    position: relative;
-   padding: 16px 18px;
    cursor: pointer;
+   transition: all .3s ease-in-out;
 }
 
 .accordion__title.active {
-   background: #fff;
-   border-top: 2px solid #FF6800;
-   border-left: 2px solid #FF6800;
-   border-right: 2px solid #FF6800;
-   border-top-right-radius: 15px;
-   border-top-left-radius: 15px;
+   background: transparent;
 }
 
-.accordion__item:hover {
-   background: linear-gradient(90deg, #8f3a01 0%, #8b1000 100%);
+.accordion__item:hover .accordion__title{
+   color: #fff;
 }
 
 .accordion__title::after,
@@ -60,21 +57,29 @@
    height: 1px;
    background: #fff;
    position: absolute;
-   top: 28px;
+   top: 65px;
    transition: all .3s ease;
 }
 
 .accordion__title::before {
-   transform: rotate(90deg);
+   transform: rotate(45deg);
+   right: 28px;
+}
+.accordion__title::after {
+   transform: rotate(-45deg);
    right: 18px;
 }
 .accordion__title.active::before {
-   transform: rotate(0deg);
+   transform: rotate(-45deg);
+   right: 28px;
+}
+.accordion__title.active::after {
+   transform: rotate(45deg);
    right: 18px;
 }
 .accordion__title.active::before,
 .accordion__title.active::after {
-   background: #000;
+   background: #fff;
 }
 .accordion__title::after {
    right: 18px;
@@ -82,22 +87,20 @@
 
 .accordion__text {
    display: none;
-   margin-top: -3px;
-   padding: 16px 19px;
-   background: #fff;
+   padding: 16px 19px 16px 105px;
+   background: transparent;
       
-   font-weight: 500;
-   font-size: .875rem;
-   line-height: 1.5rem;
-   color: #808080;
-
-   border: 2px solid #FF6800;
-   border-bottom-right-radius: 15px;
-   border-bottom-left-radius: 15px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 26px;
+   color: #FFFFFF;
+}
+.accordion__text p{
+   margin-bottom: 18px;
 }
 
 .active {
-   color: #000;
+   color: #B09355;
    background: transparent;
 }
 

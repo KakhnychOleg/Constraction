@@ -26,14 +26,16 @@ body {
    background: #333333;
 }
 .about-block,
-.project-section {
+.project-section,
+.services-section {
    padding: 134px 0;
 }
 .about,
-.project {
+.project,
+.services {
    display: flex;
    align-items: start;
-   justify-content: space-between;
+   justify-content: flex-start;
 }
 
 /* Title */
