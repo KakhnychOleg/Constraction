@@ -4,6 +4,7 @@
 /* Block */
 @import "header.css";
 @import "about.css";
+@import "project.css";
 @import "contact.css";
 @import "accord.css";
 @import "slider.css";
@@ -13,7 +14,7 @@
 
 /* Global */
 .container {
-   max-width: 1150px;
+   max-width: 1180px;
    margin: 0 auto;
    
    color: #FFFFFF;
@@ -23,6 +24,16 @@ body {
    font-family: 'Montserrat', sans-serif;
 
    background: #333333;
+}
+.about-block,
+.project-section {
+   padding: 134px 0;
+}
+.about,
+.project {
+   display: flex;
+   align-items: start;
+   justify-content: space-between;
 }
 
 /* Title */
@@ -79,15 +90,31 @@ body {
    transform: translateY(0%);
 }
 
-@media screen and (max-width: 1024px){   
-   
-}
-
 @media screen and (max-width: 1260px){   
    .title-section {
       margin-bottom: 20px;
    }
    .container {
       padding: 0 15px;
+   }
+}
+
+@media screen and (max-width: 1024px){   
+   
+}
+
+@media screen and (max-width: 480px){   
+   .about,
+   .project {
+      justify-content: center;
+   }
+   .title-section {
+      margin-right: 0;
+      text-align: center;
+   }
+   .title-block {
+      text-align: center;
+      font-size: 2rem;
+      max-width: 100%;
    }
 }
