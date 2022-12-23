@@ -27,15 +27,22 @@ $(document).ready(function () {
     $(".mobile__item:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
   };
 
-  // Slider testimonials
+  // Slider
   $('.slider__list').slick({
     dots: true,
     infinite: true,
+    nextArrow: '.slick-next-slide',
+    prevArrow: '.slick-prev-slide',
+    appendDots: '.slider__dots',
     autoplay: true,
     speed: 500,
     pauseOnHover: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+  });
+
+  $('.slider__list').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+console.log(currentSlide);
   });
 
   // Accordion
