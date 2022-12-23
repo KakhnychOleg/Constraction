@@ -33,9 +33,10 @@
    font-weight: 600;
    font-size: 24px;
    line-height: 34px;
+   display: flex;
    
    color: #B09355;
-   padding: 50px 0;
+   padding: 50px 40px 50px 0;
 
    position: relative;
    cursor: pointer;
@@ -57,7 +58,7 @@
    height: 1px;
    background: #fff;
    position: absolute;
-   top: 65px;
+   top: 50%;
    transition: all .3s ease;
 }
 
@@ -87,7 +88,7 @@
 
 .accordion__text {
    display: none;
-   padding: 16px 19px 16px 105px;
+   padding: 16px 19px 16px 100px;
    background: transparent;
       
    font-weight: 400;
@@ -106,26 +107,21 @@
 
 
 
-@media screen and (max-width: 1024px){   
+@media screen and (max-width: 1260px){  
+   .services-section {
+      padding: 94px 0;
+   }    
+   .services {
+      flex-wrap: wrap;
+   }
+}
+@media screen and (max-width: 1024px){  
    .accord__item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-   }
-   
-   .accordion {
-      max-width: 100%;
+      margin: 50px 0;
    }
 }
-
-@media screen and (max-width: 463px){   
-   .accord__img {
-      width: 300px;
-   }
-}
-
-@media screen and (max-width: 390px){   
-   .accord__img {
-      width: 250px;
+@media screen and (max-width: 768px){  
+   .accordion__title {
+      padding: 30px 40px 30px 0;
    }
 }

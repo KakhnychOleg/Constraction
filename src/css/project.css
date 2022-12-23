@@ -29,8 +29,22 @@
    gap: 70px 74px;
 }
 
+.project__item:hover {
+   -webkit-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.project__link:hover  .project__description{
+   color: #fff;
+}
+.project__link:hover  .project__name{
+   color: #B09355;
+}
+
 .project__item {
    width: 450px;
+   transition: all .5s ease-in-out;
 }
 
 .project__img img{
@@ -47,12 +61,14 @@
    line-height: 34px;
 
    margin-bottom: 8px;
+   transition: all .3s ease-in-out;
 }
 
 .project__description {
    font-weight: 600;
    font-size: 20px;
    line-height: 31px;
+   transition: all .3s ease-in-out;
 
    color: #B09355;
 }
