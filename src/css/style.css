@@ -3,6 +3,7 @@
 
 /* Block */
 @import "header.css";
+@import "about.css";
 @import "contact.css";
 @import "accord.css";
 @import "slider.css";
@@ -25,21 +26,23 @@ body {
 }
 
 /* Title */
-.title {
-   font-weight: 600;
-   font-size: 2rem;
-   line-height: 2.625rem;
-   
-   color: #000;
-
-   margin-bottom: 6px;
-}
-.subtitle {   
+.title-section {
    font-weight: 400;
-   font-size: .875rem;
-   line-height: 1.5rem;
+   font-size: 1.25rem;
+   line-height: 34px;
+   color: #ADADAD;
+   text-transform: uppercase;
 
-   color: #999;
+   min-width: 100px;
+   margin-right: 100px;
+}
+.title-block {
+   font-weight: 600;
+   font-size: 2.875rem;
+   line-height: 60px;
+   
+   color: #FFFFFF;
+   max-width: 70%;
 }
 
 ._text-center {
@@ -53,6 +56,12 @@ body {
 }
 ._mt-60 {
    margin-top: 60px;
+}
+._mb-60 {
+   margin-bottom: 60px;
+}
+._mb-70 {
+   margin-bottom: 70px;
 }
 ._mt-80 {
    margin-top: 80px;
@@ -71,9 +80,12 @@ body {
 }
 
 @media screen and (max-width: 1024px){   
-   .title,
-   .subtitle {
-      text-align: center;
+   
+}
+
+@media screen and (max-width: 1260px){   
+   .title-section {
+      margin-bottom: 20px;
    }
    .container {
       padding: 0 15px;
