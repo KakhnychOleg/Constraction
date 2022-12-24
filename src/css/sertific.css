@@ -137,11 +137,16 @@
    .sertific__link {
       flex-wrap: wrap;
       justify-content: center;
+      text-align: center;
    }
    .sertific__item {
       margin-bottom: 40px;
    }
    .sertific__img {
+      margin-bottom: 15px;
+   }
+   .sertific__img {
+      margin-right: 0;
       margin-bottom: 15px;
    }
 }  
