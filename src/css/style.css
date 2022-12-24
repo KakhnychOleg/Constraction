@@ -120,11 +120,11 @@ body {
    .contact-section {
       padding: 50px 0;
    }
-}
-
-@media screen and (max-width: 1024px){   
    .title-block {
       font-size: 1.8rem;
+   }
+   .title-block {
+      text-align: center;
    }
 }
 

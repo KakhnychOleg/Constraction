@@ -120,11 +120,16 @@
       flex-wrap: wrap;
       align-items: center;
       width: 80%;
+      margin: 0 auto;
    }
    .hero__item {
       margin-bottom: 20px;
    }
+   .link-for-about {
+      text-align: center;
+   }
 }  
+
 @media screen and (max-width: 768px){
    .hero {
       width: 100%;
