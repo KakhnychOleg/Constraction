@@ -124,6 +124,9 @@
 }
 
 @media screen and (max-width: 1024px){
+   .sertific {
+      margin-bottom: 60px;
+   }
    .sertific__list {
       flex-wrap: wrap;
       align-items: center;
@@ -134,6 +137,9 @@
 }  
 
 @media screen and (max-width: 480px){
+   .sertific {
+      margin-bottom: 30px;
+   }
    .sertific__link {
       flex-wrap: wrap;
       justify-content: center;
