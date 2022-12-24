@@ -14,15 +14,6 @@
    background: #B09355;
 }
 
-/* .hero-line::after, 
-.hero-line::before {
-   position: absolute;
-   width: 1px;
-   height: 100%;
-   content: '';
-   background: #818181;
-} */
-
 .hero__title {
    display: flex;
    justify-content: space-between;
@@ -108,6 +99,12 @@
 }
 
 /* responsive */
+
+@media screen and (max-width: 1290px){  
+   .hero {
+      width: 100%;
+   }
+}
 
 @media screen and (max-width: 1260px){  
    .about-block {
