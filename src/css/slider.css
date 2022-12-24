@@ -29,7 +29,7 @@
 
 /* Navigation */
 .slider__navigation {
-   height: 116px;
+   /* height: 116px; */
 
    display: flex;
    align-items: center;
@@ -38,12 +38,13 @@
    bottom: 0;
    left: 0;
    background: #333;
-   padding: 28px 25px 28px 44px;
+   padding: 31px 25px 31px 44px;
 }
 /* current */
 .slider__num {
    display: flex;
    align-items: center;
+   width: 97px;
 }
 
 .first-current {

@@ -101,6 +101,9 @@
    .link-for-project {
       text-align: center;
       margin-right: 0;
+   } 
+   .project__item {
+      width: 80%;
    }
 }  
 @media screen and (max-width: 678px){

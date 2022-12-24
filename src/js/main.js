@@ -21,11 +21,16 @@ $(document).ready(function () {
     speed: 500,
     pauseOnHover: true,
     slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToScroll: 1
   });
-
+  
+  // Current number slide
   $('.slider__list').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-console.log(currentSlide);
+    $('.first-current').html(function(currentnum) {
+      $('.first-current').empty();
+      var number = ('0' + (++nextSlide)) ;
+      return number;
+    });
   });
 
   // Accordion
