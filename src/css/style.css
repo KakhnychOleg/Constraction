@@ -9,6 +9,7 @@
 @import "contact.css";
 @import "accord.css";
 @import "sertific.css";
+@import "contact.css";
 @import "humb-menu.css";
 
 @import "footer.css";
@@ -26,15 +27,19 @@ body {
 
    background: #333333;
 }
+
 .about-block,
 .project-section,
-.services-section {
+.services-section,
+.contact-section {
    padding: 134px 0;
 }
+
 .about,
 .project,
 .services,
-.sertific {
+.sertific,
+.contact {
    display: flex;
    align-items: start;
    justify-content: flex-start;
@@ -110,8 +115,15 @@ body {
    .about-block,
    .project-section,
    .services-section,
-   .sertific-section {
+   .sertific-section,
+   .contact-section {
       padding: 50px 0;
+   }
+}
+
+@media screen and (max-width: 1024px){   
+   .title-block {
+      font-size: 1.8rem;
    }
 }
 
@@ -119,7 +131,8 @@ body {
    .about,
    .project,
    .services,
-   .sertific {
+   .sertific,
+   .contact {
       justify-content: center;
    }
    .title-section {

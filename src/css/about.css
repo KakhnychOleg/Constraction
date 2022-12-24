@@ -65,6 +65,8 @@
    margin: 64px 0 0 ;
 }
 
+/* Link more */
+
 .block-link {
    margin-top: 54px;
 }
@@ -80,6 +82,7 @@
    background: #B09355;
    transition: all .3s ease;
    position: relative;
+   border: none;
 }
 
 .block-links::after {
@@ -87,7 +90,7 @@
    top: 35%;
    right: 24px;
    content: url('../img/arrow-more.svg');
-   animation: .8s linear infinite more;;
+   animation: .6s infinite alternate-reverse more;;
 }
 
 .block-links:hover {
@@ -95,17 +98,13 @@
    background: #818181;
 }
 
- 
 @keyframes more {
- 0%,100% {
-   transform: translate(0%);
- }
- 50% {
-   transform: translate(50%, -20%);
- }
- 50.1% {
-   transform: translate(-50%, 20%);
- }
+   0% {
+      transform: translate(0%);
+   }
+   100% {
+      transform: translate(50%, -20%);
+   }
 }
 
 /* responsive */

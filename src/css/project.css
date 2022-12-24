@@ -9,7 +9,7 @@
    position: absolute;
 }
 .project-section::before {
-   top: -134px;
+   top: -300px;
    right: -385px;
    content: url('../img/project-bg-top.svg');
 }

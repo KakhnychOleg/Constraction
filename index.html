@@ -338,39 +338,116 @@
          </div>
       </section>
 
+      <!-- sertific -->
       <section class="sertific-section">
          <div class="container">
             <div class="sertific">
-
+               <!-- sertific-title -->
                <div class="title-section _mr-70">
                   <span>СЕРТИФІКАТИ</span>
                </div>
+
                <div class="sertific__block">
                   <div class="title-block _mb-60">Ліцензії та сертифікати</div>
 
                   <div class="sertific__list">
                      <!-- sertific item -->
                      <div class="sertific__item">
-                        <a href="#" class="sertific__link">
+                        <a href="#popup" class="sertific__link">
                            <img src="./src/img/Rectangle.png" alt="img" class="sertific__img">
                            <div class="sertific__decription">
                               <p class="sertific__title">Кваліфікаційний сертифікат</p>
                               <p class="sertific__text">Виконавця окремих видів робіт, пов’язаних зі створенням об’єктів архітектури</p>
                            </div>
                         </a>
+                        <!-- popup -->
+                        <div id="popup" class="popup">
+                           <a href="#drop" class="popup__area"></a>
+                           <div class="popup__body">
+                              <div class="popup__content">
+                                 <a href="#drop" class="popup__close">
+                                    <img src="./src/img/close.png" alt="close">
+                                 </a>
+                                 
+                                 <img src="./src/img/Rectangle.png" alt="img" class="popup__img">
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end popup -->
                      </div>
+
                      <!-- sertific item -->
                      <div class="sertific__item">
-                        <a href="#" class="sertific__link">
+                        <a href="#popup1" class="sertific__link">
                            <img src="./src/img/Rectangle1.png" alt="img" class="sertific__img">
                            <div class="sertific__decription">
                               <p class="sertific__title">Ліцензія БТІ</p>
                               <p class="sertific__text">На виконання послуг до об’єктів із середнім та значними наслідками (СС2, СС3)</p>
                            </div>
                         </a>
+                        <!-- popup -->
+                        <div id="popup1" class="popup">
+                           <a href="#drop" class="popup__area"></a>
+                           <div class="popup__body">
+                              <div class="popup__content">
+                                 <a href="#drop" class="popup__close">
+                                    <img src="./src/img/close.png" alt="close">
+                                 </a>
+                                 
+                                 <img src="./src/img/Rectangle1.png" alt="img" class="popup__img">
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end popup -->
                      </div>
                   </div>
+               </div>
+            </div>
+         </div>
+      </section>
 
+      <!-- contact -->
+      <section class="contact-section">
+         <div class="container">
+            <div class="contact">
+               <!-- contact-title -->
+               <div class="title-section ">
+                  <span>ЗВ’ЯЗАТИСЬ</span>
+               </div>
+
+               <div class="contact__block">
+                  <div class="title-block _mb-60">Залиште заявку та ми зв’яжемось
+                     з вами найближчим часом</div>
+                  
+                  <form action="" name="contact" id="form" method="post">
+                     <div class="form__block-name">
+                        <input class="form__input " type="text" name="name" placeholder="Ім’я" required>
+                        <input class="form__input " type="email" name="name" placeholder="E-MAIL" required>
+                     </div>
+                     <div class="form__input">
+                        <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                        <label for="input__file" class="input__file-button">
+                           <span class="input__file-button-text">Детальніше про проєкт</span>
+                           <span class="input__file-icon-wrapper">
+                              <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.78 2.3877C13.9838 2.3877 13.2202 2.704 12.6572 3.26703L3.46715 12.457C2.52884 13.3953 2.00171 14.668 2.00171 15.9949C2.00171 17.3219 2.52884 18.5945 3.46715 19.5328C4.40546 20.4711 5.67808 20.9983 7.00505 20.9983C8.33201 20.9983 9.60463 20.4711 10.5429 19.5328L19.7329 10.3428C20.1235 9.95229 20.7566 9.95229 21.1472 10.3428C21.5377 10.7333 21.5377 11.3665 21.1472 11.757L11.9572 20.947C10.6438 22.2604 8.86245 22.9983 7.00505 22.9983C5.14765 22.9983 3.36632 22.2604 2.05294 20.947C0.739558 19.6336 0.00170898 17.8523 0.00170898 15.9949C0.00170898 14.1375 0.739558 12.3562 2.05294 11.0428L11.2429 1.85281C12.181 0.914714 13.4534 0.387695 14.78 0.387695C16.1067 0.387695 17.3791 0.914714 18.3172 1.85281C19.2553 2.79091 19.7823 4.06325 19.7823 5.38992C19.7823 6.71659 19.2553 7.98893 18.3172 8.92703L9.11715 18.117C8.55434 18.6798 7.79099 18.996 6.99505 18.996C6.1991 18.996 5.43576 18.6798 4.87294 18.117C4.31012 17.5542 3.99393 16.7909 3.99393 15.9949C3.99393 15.199 4.31012 14.4356 4.87294 13.8728L13.3634 5.3924C13.7541 5.0021 14.3873 5.00247 14.7776 5.39323C15.1679 5.78398 15.1675 6.41715 14.7767 6.80744L6.28715 15.287C6.09967 15.4747 5.99393 15.7296 5.99393 15.9949C5.99393 16.2604 6.09941 16.5151 6.28715 16.7028C6.4749 16.8906 6.72954 16.996 6.99505 16.996C7.26056 16.996 7.51519 16.8906 7.70294 16.7028L16.9029 7.51281C17.4657 6.94982 17.7823 6.18598 17.7823 5.38992C17.7823 4.59368 17.466 3.83005 16.9029 3.26703C16.3399 2.704 15.5763 2.3877 14.78 2.3877Z" fill="#D1D1D1"/>
+                              </svg>
+                           </span>
+                        </label>
+                     </div>
+
+                     <label for="contact" class="form__label" for="fcheck">
+                        <div class="checkbox">
+                           <input type="checkbox" name="checkbox" id="fcheck" required>
+                           <span class="form__span">Я даю згоду на обробку моїх персональних даних</span>
+                        </div>
+                     </label>
+
+                     
+                     <div class="block-link">
+                        <button type="submit" class="block-links">Відправити</button>
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
