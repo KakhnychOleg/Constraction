@@ -47,6 +47,7 @@
    justify-content: space-between;
    position: relative;
    width: 97px;
+   height: 53px;
 }
 
 .first-current {
@@ -59,7 +60,7 @@
 .line {
    position: absolute;
    left: 50%;
-   top: -12px;
+   top: 0;
    content: '';
    width: 1px;
    height: 53px;
@@ -168,12 +169,8 @@
       padding: 10px 15px 10px 44px;
    }
    .callback {
-      bottom: 50px;
+      bottom: 72px;
       padding: 15px 45px;
-   }
-   .line {
-      height: 42px;
-      top: -6px;
    }
 } 
 
