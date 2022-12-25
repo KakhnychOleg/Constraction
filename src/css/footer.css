@@ -16,6 +16,10 @@
    width: auto;
 }
 
+.copy-mobile {
+   display: none;
+}
+
 /* footer__logo */
 .footer__description{
    margin-top: 20px;
@@ -92,14 +96,25 @@
       justify-content: flex-start;
    }
 }
+
 @media screen and (max-width: 624px){
    .footer__items {
       width: 100%;
       margin-bottom: 15px;
    }
    
+   .footer__description,
    .footer__content {
       justify-content: center;
       text-align: center;
    }
+
+   .copy-mobile {
+      display: block;
+   }
+
+   .copy-desktop {
+      display: none;
+   }
+
 }
