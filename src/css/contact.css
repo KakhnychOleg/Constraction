@@ -128,32 +128,30 @@
 }
 /* Input download file */
 .input__file {
-opacity: 0;
-visibility: hidden;
-position: absolute;
+   display: none;
 }
 
 .input__file-icon-wrapper {
-height: 60px;
-width: 60px;
-display: flex;
-align-items: center;
-justify-content: flex-end;
+   height: 60px;
+   width: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
 }
 
 .input__file-button-text {
-line-height: 1;
+   line-height: 1;
 }
 
 .input__file-button {
-width: 100%;
-color: #fff;
-font-size: 1.375rem;
-line-height: 32px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-cursor: pointer;
+   width: 100%;
+   color: #fff;
+   font-size: 1.375rem;
+   line-height: 32px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer;
 }
 
 

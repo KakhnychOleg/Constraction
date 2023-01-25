@@ -61,44 +61,40 @@ $(document).ready(function () {
 
     return false;
   });
-
-
 });
 
 // Animation
-function onEntry(entry) {
-   entry.forEach(change => {
-     if (change.isIntersecting) {
-      change.target.classList.add('element-show');
-     }
-   });
- }
+// function onEntry(entry) {
+//    entry.forEach(change => {
+//      if (change.isIntersecting) {
+//       change.target.classList.add('element-show');
+//      }
+//    });
+//  }
  
- let options = {
-   threshold: [0.5] };
- let observer = new IntersectionObserver(onEntry, options);
- let elements = document.querySelectorAll('.element-animation');
+//  let options = {
+//    threshold: [0.1] };
+//  let observer = new IntersectionObserver(onEntry, options);
+//  let elements = document.querySelectorAll('.element-animation');
  
- for (let elm of elements) {
-   observer.observe(elm);
- }
-
-
+//  for (let elm of elements) {
+//    observer.observe(elm);
+//  }
 
 //  sca
 let inputs = document.querySelectorAll('.input__file');
-    Array.prototype.forEach.call(inputs, function (input) {
-      let label = input.nextElementSibling,
-        labelVal = label.querySelector('.input__file-button-text').innerText;
-  
-      input.addEventListener('change', function (e) {
-        let countFiles = '';
-        if (this.files && this.files.length >= 1)
-          countFiles = this.files.length;
-  
-        if (countFiles)
-          label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
-        else
-          label.querySelector('.input__file-button-text').innerText = labelVal;
-      });
-    });
+Array.prototype.forEach.call(inputs, function (input) {
+  let label = input.nextElementSibling,
+    labelVal = label.querySelector('.input__file-button-text').innerText;
+
+  input.addEventListener('change', function (e) {
+    let countFiles = '';
+    if (this.files && this.files.length >= 1)
+      countFiles = this.files.length;
+
+    if (countFiles)
+      label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
+    else
+      label.querySelector('.input__file-button-text').innerText = labelVal;
+  });
+});

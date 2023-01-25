@@ -68,6 +68,9 @@ body {
 ._text-center {
    text-align: center;
 }
+._mb-15 {
+   margin-bottom: 15px;
+}
 ._mb-20 {
    margin-bottom: 20px;
 }
@@ -124,7 +127,7 @@ body {
       font-size: 1.8rem;
    }
    .title-block {
-      text-align: center;
+      min-width: 85%;
    }
 }
 
